@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>기장군청</title>
+    <link rel="stylesheet" href="../CSS/index.css" />
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header>
+      <h1 class="header_logo">
+        <a href="index.html"><img src="../IMG/logo.png" alt="기장군로고" /></a>
+      </h1>
+      <ul class="gnb">
+        <li><a href="#">정보공개</a></li>
+        <li><a href="#">전자민원</a></li>
+        <li><a href="#">복지정보</a></li>
+        <li><a href="#">분야별정보</a></li>
+        <li><a href="#">기장소개</a></li>
+        <li><a href="#">자주찾는정보</a></li>
+      </ul>
+      <div class="utill">
+        <p><a href="#">사이트맵</a></p>
+        <p class="lang"><a href="#">LANGUAGE</a></p>
+      </div>
+      <div class="nav_ham"><a href="#"></a></div>
+    </header>
+    <!-- 상단 메인 영역 -->
+    <div class="main">
+      <div class="main_wrap">
+        <div class="main_tp">
+          <div class="main_tp_info">
+            <div class="weather">
+              <p class="weather_icon">
+                <img src="..\IMG\top_weather_sun.png" alt="날씨" />
+              </p>
+              <ul>
+                <li class="weather_tit">날씨정보</li>
+                <li class="weather_info">27.5℃</li>
+                <li class="weather_info2">미세먼지 34㎍/㎥ 보통</li>
+              </ul>
+            </div>
+            <!-- 날씨 -->
+            <div id="search">
+              <div class="search_area">
+                <fieldset>
+                  <legend class="display_none">통합검색 영역</legend>
+                  <form
+                    id="searchform"
+                    method="post"
+                    name="searchform"
+                    action="#"
+                  >
+                    <select name="collection" id="searchCate">
+                      <option value selected="selected">통합검색</option>
+                      <option value="image">이미지</option>
+                      <option value="board">게시판</option>
+                    </select>
+
+                    <label for="qt" class="display_none">검색어 입력</label>
+
+                    <input
+                      style="border: none; height: 56px"
+                      size="35"
+                      type="text"
+                      name="keyword"
+                      id="qt"
+                      class="searchQuery"
+                    />
+
+                    <input
+                      type="submit"
+                      id="sc_button"
+                      class="total_btn"
+                      value="검색"
+                    />
+                  </form>
+                </fieldset>
+              </div>
+            </div>
+            <!-- 검색바 -->
+            <div class="slogan">
+              <img src="..\IMG\top_slogan.png" alt="기장슬로건" />
+            </div>
+            <!-- 슬로건 -->
+          </div>
+        </div>
+        <div class="main_mid">
+          <div class="main_mid_lt">
+            <img src="../IMG/top_left.png" alt="코로나방역배너" />
+          </div>
+          <div class="main_mid_rt">
+            <div class="inform_box">
+              <div class="inform_rt">
+                <p class="inform_tit">알림사항</p>
+                <div class="inform_btnset">
+                  <p class="inform_btn01">
+                    <a href="#" style="color: #fff">고시 공고</a>
+                  </p>
+                  <p class="inform_btn02">
+                    <a href="#" style="color: #fff">보도 자료</a>
+                  </p>
+                </div>
+                <p class="inform_btn03">
+                  <a href="#">기장군<br />보건소<br />바로가기</a>
+                </p>
+              </div>
+              <div class="inform_lt">
+                <p class="inform_call_tit">기장군 대표 콜센터</p>
+                <p class="inform_call_num">051-709-4000</p>
+                <p class="inform_call_btn">
+                  <a href="#">재난·시정 문자서비스 신청</a>
+                </p>
+              </div>
+            </div>
+            <div class="mayor_box">
+              <p class="mayor_text">
+                <img
+                  src="..\IMG\mayor_text.png"
+                  alt="더 뜨겁게,더 낮은 자세로 섬기겠습니다!"
+                />
+              </p>
+
+              <p class="mayor_text_inner">
+                열정과 함께하는<br />
+                기장군수 &nbsp
+                <img src="..\IMG\mayor_name.png" alt="오규석" /> &nbsp 입니다.
+              </p>
+              <a href="#">기장군수실 바로가기</a>
+            </div>
+          </div>
+        </div>
+        <div class="main_bot">
+          <h3 class="bot_tit">
+            <img src="../IMG/main_bot_tit.png" alt="기장군 주요서비스" />
+          </h3>
+          <ul class="bot_icon_list">
+            <li>
+              <a href="#"
+                ><span class="bot_icon01"></span>
+                <p class="bot_text01">문화관광</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="bot_icon02"></span>
+                <p class="bot_text02">의회</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="bot_icon03"></span>
+                <p class="bot_text03">보건소</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="bot_icon04"></span>
+                <p class="bot_text04">기장군도서관</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="bot_icon05"></span>
+                <p class="bot_text05">평생교육센터</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="bot_icon06"></span>
+                <p class="bot_text06">농업기술센터</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="bot_icon07"></span>
+                <p class="bot_text07">해조류연구</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="bot_icon08"></span>
+                <p class="bot_text08">일자리정보</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="bot_icon09"></span>
+                <p class="bot_text09">기장군보</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="con_top">
+          <div class="notice">
+            <h4 class="notice_tit">
+              <img src="../IMG/con_notice_tit.png" alt="새소식" />
+            </h4>
+            <ul class="notice_menu">
+              <li><a href="#">군정뉴스</a></li>
+              <li><a href="#">인터넷발언대</a></li>
+              <li><a href="#">기장군민소식</a></li>
+              <li><a href="#">구인구직</a></li>
+            </ul>
+            <span class="notice_more">
+              <a href="#"><img src="../IMG/plus.png" alt="더보기" /></a>
+            </span>
+            <div class="notice_list">
+              <ul>
+                <li>
+                  <a href="">월내~길천지구 '연안 정비사업' 확정</a
+                  ><span>2020.07.13</span>
+                </li>
+                <li>
+                  <a href="">유용 미생물 활용 '가축복지' 앞장</a
+                  ><span>2020.07.13</span>
+                </li>
+                <li>
+                  <a href="">기장군, 자동차 배출가스 종합검사 의무화</a
+                  ><span>2020.07.13</span>
+                </li>
+                <li>
+                  <a href="">방사성동위원소 융합연구 기반구축 협약</a
+                  ><span>2020.07.13</span>
+                </li>
+                <li>
+                  <a href="">황학대에서 만난 고산 윤선도 선생</a
+                  ><span>2020.06.02</span>
+                </li>
+                <li>
+                  <a href="">‘기장읍성’ 국가 사적 지정 작업 박차</a
+                  ><span>2020.06.02</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contop_rt">
+            <div class="popzone">
+              <div class="popzone_tit">
+                <p>팝업존<a href="#"></a></p>
+              </div>
+              <div class="popzone_img"></div>
+            </div>
+            <div class="safety">
+              <div class="safety_tp">
+                <span>
+                  <a href="#">자세히 보기</a>
+                </span>
+              </div>
+              <div class="safety_bt">
+                <span>
+                  <a href="#">바로 가기</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="con_bot">
+          <div class="call_box">
+            <h3 class="call_box_tit">민원 서비스</h3>
+            <p class="call_box_text">
+              민원업무를 신속하고
+              <br />
+              친절하게 해결 해드리겠습니다.
+            </p>
+            <div class="call_box_btn">
+              <a href="#"><span class="call_btn_tp"></span>온라인민원</a>
+              <a href="#"><span class="call_btn_bt"></span>종합민원실</a>
+            </div>
+          </div>
+          <div class="con_bot_rt">
+            <div class="shortcut_box">
+              <h3 class="short_tit">바로가기</h3>
+              <ul class="short_icon_set">
+                <li class="icon01"><a href="">계약정보공개</a></li>
+                <li class="icon02">
+                  <a href="">도시공간<br />정보포탈</a>
+                </li>
+                <li class="icon03">
+                  <a href="">기장군<br />거점영어센터</a>
+                </li>
+                <li class="icon04">
+                  <a href="">사회적<br />경제허브센터</a>
+                </li>
+                <li class="icon05">
+                  <a href="">정보화<br />마을</a>
+                </li>
+                <li class="icon06">
+                  <a href="">현수막<br />인터넷신청</a>
+                </li>
+                <li class="icon07">
+                  <a href="">자치법규<br />정보시스템</a>
+                </li>
+                <li class="icon08">
+                  <a href="">토지이용<br />계획열람</a>
+                </li>
+                <li class="icon09"><a href="">민원상담</a></li>
+                <li class="icon10">
+                  <a href="">사이버<br />평생교육센터</a>
+                </li>
+                <li class="icon11">
+                  <a href="">개별<br />공시지가</a>
+                </li>
+                <li class="icon12">
+                  <a href="">규제개혁<br />신문고</a>
+                </li>
+              </ul>
+            </div>
+            <div class="favorite_box">
+              <h3 class="favor_tit">자주 찾는 정보</h3>
+              <ul class="favor_menu">
+                <li><a href="#">행정조직</a></li>
+                <li><a href="#">구인정보 (일반)</a></li>
+                <li><a href="#">전자민원창구</a></li>
+                <li><a href="#">장학금</a></li>
+                <li><a href="#">여권</a></li>
+                <li><a href="#">자유게시판</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 투어 영역 -->
+      <div class="tour">
+        <h2 class="tour_tit">
+          <img
+            src="../IMG/tour_tit.png"
+            alt="청정자연과 맛이 어우러진 웰빙기장"
+          />
+          <p class="tour_subtit">다양한 축제와 행사들, 청정 기장으로 오세요</p>
+        </h2>
+        <div class="tour_con">
+          <div class="tour_rt">
+            <div class="trt_tit">
+              <p class="trt_top"><a href="#">기장 8경</a></p>
+              <p class="trt_mid"><a href="#">3경</a></p>
+              <p class="trt_bot"><a href="#">해동용궁사</a></p>
+              <p class="trt_btn"><a href="#">3/8</a></p>
+            </div>
+          </div>
+          <ul class="tour_menu">
+            <li><a href="#">기장 축제 바로가기</a></li>
+            <li><a href="#">기장 예술 문화 행사</a></li>
+            <li><a href="#">기장 코스별 관광</a></li>
+            <li><a href="#">기장 먹거리촌</a></li>
+          </ul>
+
+          <ul class="tour_icon">
+            <li class="t_icon01"><a href="#">멸치 축제</a></li>
+            <li class="t_icon02">
+              <a href="#">미역·다시마<br />축제</a>
+            </li>
+            <li class="t_icon03"><a href="#">붕장어 축제</a></li>
+            <li class="t_icon04">
+              <a href="#"
+                >정관 생태학습<br />
+                문화 축제</a
+              >
+            </li>
+            <li class="t_icon05">
+              <a href="#">철마 한우<br />불고기 축제</a>
+            </li>
+            <li class="t_icon06"><a href="#">갯마을 축제</a></li>
+            <li class="t_icon07"><a href="#">차성 문화제</a></li>
+            <li class="t_icon08"><a href="#">일광 해수욕장</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- QR맵 영역-->
+      <div class="qr_map"></div>
+      <!-- 푸터 영역-->
+      <footer>
+        <div class="ft_con">
+          <h4 class="ft_logo">
+            <a href="#"
+              ><img src="../IMG/foot_logo.gif" alt="기장군 footer 로고"
+            /></a>
+          </h4>
+
+          <ul class="ft_menu">
+            <li>
+              <a href="#"><span>개인정보처리방침</span></a>
+            </li>
+            <li><a href="#">홈페이지 저작권 보호정책</a></li>
+            <li><a href="#">주요시설 안내</a></li>
+            <li><a href="#">행정전화</a></li>
+            <li><a href="#">뷰어다운로드</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">찾아오시는 길</a></li>
+          </ul>
+          <address class="ft_add">
+            주소 : (46077) 부산광역시 기장군 기장읍 기장대로 560
+            TEL.051-709-4000
+            <p class="ft_cp">
+              Copyright(c) 2011 by GIJANG-GUN All right Reserved.
+            </p>
+          </address>
+
+          <a href="#" class="ft_icon"
+            ><img
+              src="../IMG/waicon.gif"
+              alt="웹 접근성 우수사이트 인증마크(WA인증마크)"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
