@@ -252,9 +252,16 @@ option {
   z-index: 2;
   background-image: url(../IMG/search_icon.png);
 }
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
 
 input[type="text"] {
   font-size: 15px;
+  width: 250px;
 }
 
 input[type="submit"] {
@@ -299,10 +306,10 @@ input[type="submit"] {
   color: #fff;
   font-size: 26px;
   font-family: "yg-jalnan";
-
   font-weight: lighter;
   background: url(../IMG/inform_box_icon_01.png) no-repeat;
   line-height: 30px;
+  line-height: 30px\0;
   padding-left: 42px;
 }
 
@@ -315,7 +322,6 @@ input[type="submit"] {
   position: relative;
   display: inline-block;
   margin-bottom: 10px;
-
   background: #e65d4f;
   font-size: 18px;
   border-radius: 50px;
@@ -323,12 +329,16 @@ input[type="submit"] {
   height: 32px;
   font-family: "yg-jalnan";
   font-weight: lighter;
-  padding: 4px 10px 4px 20px;
+  padding: 0px 10px 4px 20px;
+  line-height: 32px;
+  line-height: 40px\0px;
   box-sizing: border-box;
-  line-height: 24px;
   cursor: pointer;
 }
-
+_:-ms-fullscreen,
+:root .inform_btn01 {
+  line-height: 40px;
+}
 .inform_btn01:after {
   position: absolute;
   right: 12px;
@@ -350,12 +360,17 @@ input[type="submit"] {
   height: 32px;
   font-family: "yg-jalnan";
   font-weight: lighter;
-  padding: 4px 10px 4px 20px;
+  padding: 0px 10px 4px 20px;
   box-sizing: border-box;
-  line-height: 24px;
   cursor: pointer;
+  line-height: 32px;
+  line-height: 40px\0;
 }
 
+_:-ms-fullscreen,
+:root .inform_btn02 {
+  line-height: 40px;
+}
 .inform_btn02:after {
   position: absolute;
   right: 12px;
