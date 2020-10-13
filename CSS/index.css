@@ -131,9 +131,8 @@ header {
 /* main */
 
 .main {
-  background-image: url(../IMG/top_back.png);
+  background: url(../IMG/top_back.png) center top no-repeat;
   background-size: cover;
-  height: 777px;
 }
 
 .main_wrap {
@@ -153,6 +152,7 @@ header {
 .main_tp_info {
   display: flex;
   justify-content: space-between;
+  height: 188px;
 }
 
 .weather {
@@ -280,7 +280,10 @@ input[type="submit"] {
   display: flex;
   margin: 0 auto;
   width: 1194px;
-  height: 381px;
+}
+
+.main_mid_rt {
+  margin-left: 30px;
 }
 
 /* inform right */
@@ -290,7 +293,7 @@ input[type="submit"] {
   width: 582px;
   height: 141px;
   background: #3c4968;
-  margin-left: 30px;
+
   border-radius: 30px;
   padding: 10px 26px 10px 20px;
   box-sizing: border-box;
@@ -450,7 +453,7 @@ _:-ms-fullscreen,
   width: 582px;
   height: 172px;
   background: #3352a4 url(../IMG/mayor.png) no-repeat right;
-  margin-left: 30px;
+
   border-radius: 30px;
   margin-top: 32px;
   box-sizing: border-box;
@@ -486,8 +489,8 @@ _:-ms-fullscreen,
 
 .main_bot {
   width: 1194px;
-  height: 142px;
   margin: 0 auto;
+  margin-top: 30px;
   background: #e5e6f0 url(../IMG/main_bot_map.png) no-repeat right;
   border-radius: 12px;
   padding: 24px 59px 24px 40px;
@@ -1292,13 +1295,18 @@ footer {
 }
 
 /* 미디어쿼리 */
+@media all and (max-width: 1750px) {
+  .tour_rt {
+    width: 50%;
+  }
+}
 
 @media all and (max-width: 1300px) {
   header {
     position: relative;
     display: flex;
     margin: 0 auto;
-    height: 70px;
+    height: 80px;
   }
 
   .header_logo {
@@ -1318,8 +1326,69 @@ footer {
     background: url(../IMG/nav_ham.png) no-repeat;
     position: absolute;
     right: 4%;
-    bottom: 12px;
+    bottom: 18px;
     width: 24px;
     height: 24px;
   }
+
+  .weather {
+    display: none;
+  }
+
+  #search {
+    width: 40%;
+    position: absolute;
+    left: 4%;
+  }
+
+  .slogan {
+    position: absolute;
+    right: 4%;
+  }
+
+  #search .search_area #searchCate {
+    display: none;
+  }
+
+  input[type="text"] {
+    font-size: 15px;
+    width: 270px;
+    position: absolute;
+    left: 10%;
+  }
+
+  .main_mid {
+    flex-direction: column;
+  }
+
+  .main_mid_lt {
+    margin-left: 30px;
+  }
+
+  .main_mid_rt {
+    display: flex;
+  }
+
+  .inform_box {
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 840px) {
+  .slogan {
+    display: none;
+  }
+
+  .main_tp_info {
+    height: 120px;
+  }
+
+  #search {
+    width: 90%;
+    margin: 30px 0 20px 0;
+  }
+}
+
+@media all and (max-width: 650px) {
 }
