@@ -1358,10 +1358,6 @@ footer {
     left: 10%;
   }
 
-  .main_mid {
-    flex-direction: column;
-  }
-
   .main_mid_lt {
     margin-left: 30px;
   }
